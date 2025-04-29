@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Modificar Costos - TallerControlPRO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #ffffff;
+      color: #000;
+    }
+    h2 {
+      color: #ff0000;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ff0000;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Modificar Costos</h2>
+
+<form id="costosForm">
+  <input type="number" name="costoPintura" placeholder="Costo por pieza - Pintura" required>
+  <input type="number" name="costoDesabolladura" placeholder="Costo por pieza - Desabolladura" required>
+  <button type="submit">Guardar Costos</button>
+</form>
+
+<script>
+const form = document.getElementById('costosForm');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const data = {};
+
+  formData.forEach((value, key) => {
+    data[key] = parseFloat(value);
+  });
+
+  try {
+    const response = await fetch('/costos', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      alert('Costos actualizados correctamente.');
+      window.location.href = '/dashboard.html';
+    } else {
+      alert('Error al actualizar los costos.');
+    }
+
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Error de conexión.');
+  }
+});
+</script>
+
+</body>
+</html>

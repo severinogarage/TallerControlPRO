@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P-00001",
+    "nombre": "RENATO SEVERINO",
+    "rut": "212753106",
+    "telefono": "973625639",
+    "correo": "RENAX.1351@GMAIL.COM",
+    "patente": "LZGC97",
+    "marca": "PEUGEOT",
+    "modelo": "308",
+    "anio": "2020",
+    "piezasPintura": "2",
+    "piezasDesabolladura": "3",
+    "detalle": ""
+  },
+  {
+    "id": "P-00005",
+    "nombre": "ROMMY BRAVO",
+    "rut": "124994292",
+    "telefono": "985953124",
+    "correo": "ROMMY.BRAVO@GMAIL.COM",
+    "patente": "SXCY26",
+    "marca": "FORD",
+    "modelo": "TERRITORY",
+    "anio": "2024",
+    "piezasPintura": "2",
+    "piezasDesabolladura": "2",
+    "detalle": "DESABOLLAR 2 PUERTAS DELANTERAS"
+  },
+  {
+    "id": "P-00006",
+    "nombre": "RENATO SEVERINO",
+    "rut": "212753106",
+    "telefono": "973625639",
+    "correo": "RENAX.1351@GMAIL.COM",
+    "patente": "LZGC97",
+    "marca": "PEUGEOT",
+    "modelo": "308",
+    "anio": "2020",
+    "piezasPintura": "3",
+    "piezasDesabolladura": "3",
+    "detalle": "PULIR PUERTAS"
+  },
+  {
+    "id": "P-00007",
+    "nombre": "RENATO SEVERINO",
+    "rut": "212753106",
+    "telefono": "973625639",
+    "correo": "RENAX.1351@GMAIL.COM",
+    "patente": "LZGC97",
+    "marca": "PEUGEOT",
+    "modelo": "308",
+    "anio": "2020",
+    "piezasPintura": "2",
+    "piezasDesabolladura": "3",
+    "detalle": "DFASGRWGWG"
+  }
+]
